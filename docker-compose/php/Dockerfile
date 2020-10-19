@@ -31,4 +31,3 @@ RUN composer --version
 RUN composer global require hirak/prestissimo
 RUN composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader
 RUN php bin/console cache:clear
-RUN echo "/var/www/html/dktrent/var/cache/prod/srcApp_KernelProdContainer.preload.php" > /usr/local/etc/php/conf.d/php_opcache.ini

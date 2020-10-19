@@ -10,40 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="852914ed-899d-4439-a0ff-9d6ff4414dda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ssi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/nginx.dev.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/symfony.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/symfony.dev.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/openssl.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/php_apc.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/php_custom.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/php_opcache.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/php_socket.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/php/www.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/slow.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    <list default="true" id="852914ed-899d-4439-a0ff-9d6ff4414dda" name="Default Changelist" comment="ok">
+      <change beforePath="$PROJECT_DIR$/docker-compose/nginx/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/nginx/symfony.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/php/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +94,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603115113617</updated>
-      <workItem from="1603115115200" duration="882000" />
+      <workItem from="1603115115200" duration="979000" />
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <created>1603116234001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603116234001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,5 +119,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
 </project>
