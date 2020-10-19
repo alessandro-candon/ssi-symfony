@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  php-fpm:
+    environment:
+      - APP_ENV=dev
+      - APP_DEBUG=1
+      - APP_NAME=symfony
+    build:
+      context: .
+      args:
+        - APP_NAME=symfony
+      dockerfile: ./docker-compose/php/Dockerfile
+    entrypoint: /bin/sh
+    command: ./docker-compose/php/entrypoint.sh
+    ports:
+      - "9000"
+    volumes:
+      - .:/var/www/html/symfony:cached
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker-compose/nginx/Dockerfile
+    entrypoint: /bin/sh
+    command: /var/www/html/symfony/docker-compose/nginx/entrypoint.sh
+    ports: ['8101:80']
+    depends_on:
+      - php-fpm
+    volumes:
+      - ./var/nginx/log:/var/log/nginx:cached
+      - .:/var/www/html/symfony:cached
