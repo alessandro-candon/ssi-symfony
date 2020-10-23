@@ -16,6 +16,15 @@ services:
       - "9000"
     volumes:
       - .:/var/www/html/symfony:cached
+  nginx-upstream:
+    build:
+      context: .
+      dockerfile: ./docker-compose/nginx-upstream/Dockerfile
+    entrypoint: /bin/sh
+    command: entrypoint.sh
+    ports: ['8100:80']
+    volumes:
+      - ./docker-compose/nginx-upstream/content:/var/www/html
   nginx:
     build:
       context: .
@@ -24,6 +33,7 @@ services:
     command: /var/www/html/symfony/docker-compose/nginx/entrypoint.sh
     ports: ['8101:80']
     depends_on:
+      - nginx-upstream
       - php-fpm
     volumes:
       - ./var/nginx/log:/var/log/nginx:cached
