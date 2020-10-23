@@ -24,7 +24,7 @@ class HomeController extends AbstractController
         ]);
 
         $response->setSharedMaxAge(600);
-
+        $response->setPublic();
         return $response;
     }
 }

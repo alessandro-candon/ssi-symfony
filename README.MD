@@ -12,3 +12,10 @@ I also add a cache of 600 seconds and the timestamp.
 
 The expected  behavior should be : timestamp don't have to change, must be the same due to the cache.
 
+## How to start
+
+Install vendor with composer 
+```
+docker exec ssi_php-fpm_1 composer install
+```
+
