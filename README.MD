@@ -19,3 +19,5 @@ Install vendor with composer
 docker exec ssi_php-fpm_1 composer install
 ```
 
+## Test nginx backend cache+ssi only:
+`curl -v upstream.test:8101/outer-static.html`
