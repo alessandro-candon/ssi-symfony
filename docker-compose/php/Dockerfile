@@ -28,6 +28,5 @@ RUN docker-php-ext-install mbstring opcache -j$(nproc) gd intl \
 RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory_limit.ini
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
-RUN composer global require hirak/prestissimo
 RUN composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader
 RUN php bin/console cache:clear
