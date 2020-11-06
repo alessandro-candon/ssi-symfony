@@ -12,9 +12,10 @@ I also add a cache of 600 seconds and the timestamp.
 
 The expected  behavior should be : timestamp don't have to change, must be the same due to the cache.
 
-## How to start
+# When starting symfony, if error appears
+*PHP message: PHP Warning:  require(/var/www/html/symfony/vendor/autoload.php): failed to open stream: No such file or directory in /var/www/html/symfony/public/index.php on line 8*
 
-Install vendor with composer 
+Solution: install vendor with composer inside the container:
 ```
 docker exec ssi_php-fpm_1 composer install
 ```
